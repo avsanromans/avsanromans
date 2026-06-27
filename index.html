@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A.V. San Román de Sanabria</title>
+  <title>AAVV San Román de Sanabria</title>
   <meta name="description" content="Asociación de Vecinos de San Román de Sanabria. Preservando tradiciones, construyendo comunidad en el corazón de Sanabria.">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="img/logo.png" type="image/png">
 </head>
@@ -23,48 +26,35 @@
           <span>de Sanabria</span>
         </div>
       </a>
-
       <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
-
-      <div class="header-nav-group" id="header-nav-group">
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#asociacion">Asociación</a></li>
-            <li><a href="#logros">Qué hacemos</a></li>
-            <li><a href="#galeria">Galería</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="header-divider"></div>
-        <div class="social-links">
-          <a href="https://www.facebook.com/profile.php?id=100087089541079" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="https://www.youtube.com/channel/UCU8y4FqupEK8_rAUB7P-YuQ/" target="_blank" rel="noopener" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-          </a>
-        </div>
-      </div>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#asociacion">Asociación</a></li>
+          <li><a href="#logros">Qué hacemos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <!-- ========== HERO ========== -->
   <section class="hero">
-    <div class="hero-img-wrapper">
-      <img src="img/portada.jpg" alt="Vista aérea de San Román de Sanabria rodeado de bosques de robles y castaños">
-      <div class="hero-overlay">
-        <div class="hero-content">
-          <img src="img/logo.png" alt="" class="hero-logo" aria-hidden="true">
-          <div class="hero-text">
-            <h1>San Román de Sanabria</h1>
-            <p class="subtitle">Asociación de Vecinos</p>
-            <p>Un pueblo vivo entre robles y castaños centenarios, donde la comunidad cuida lo que hereda y construye lo que viene.</p>
-          </div>
-        </div>
+    <div class="hero-bg" role="img" aria-label="Vista aérea de San Román de Sanabria"></div>
+    <div class="hero-content">
+      <img src="img/logo.png" alt="" class="hero-logo" aria-hidden="true">
+      <div class="hero-text">
+        <h1>San Román<br>de Sanabria</h1>
+        <p class="subtitle">Asociación de Vecinos</p>
+        <p>Un pueblo vivo entre robles y castaños centenarios, donde la comunidad cuida lo que hereda y construye lo que viene.</p>
       </div>
     </div>
+    <a href="#asociacion" class="hero-scroll" aria-label="Bajar al contenido">
+      <span>Descubre</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </a>
   </section>
 
   <!-- ========== NUESTRA ASOCIACIÓN ========== -->
@@ -93,116 +83,118 @@
       <p class="section-intro">Cada proyecto nace de una necesidad real y se construye entre todos. Estos son los ejes que guían nuestro trabajo.</p>
 
       <div class="values-grid">
-        <!-- Card 1: Local Social -->
-        <div class="value-card fade-in">
-          <div class="value-card-img">
-            <img src="img/pilar-local.svg" alt="Ilustración de un local social con luz cálida">
-          </div>
-          <div class="value-card-body">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h3>Un espacio de convivencia</h3>
-            <p>Hemos conseguido un Local Social para San Román y lo hemos acondicionado gracias a las subvenciones de la Diputación de Zamora. Un lugar donde encontrarse, compartir y hacer pueblo.</p>
-          </div>
-        </div>
 
-        <!-- Card 2: Decisiones -->
+        <!-- Card 1 -->
         <div class="value-card fade-in">
-          <div class="value-card-img">
-            <img src="img/pilar-unidad.svg" alt="Ilustración de vecinos reunidos bajo un roble">
+          <div class="value-photo">
+            <img src="img/vecinos.jpg" alt="Vecinos reunidos">
           </div>
-          <div class="value-card-body">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
+          <div class="value-content">
             <h3>Un pueblo que decide unido</h3>
             <p>Hemos creado un espacio donde los vecinos pueden expresar sus necesidades, aportar ideas y colaborar conjuntamente para mejorar la calidad de vida y el futuro de nuestro pueblo.</p>
+            <div class="card-timeline">
+              <div class="timeline-item"><span class="timeline-year">Constitución</span><span class="timeline-text">En 2022 se constituyó, con mucha ilusión, la Asociación de Vecinos.</span></div>
+              <div class="timeline-item"><span class="timeline-year">Asambleas</span><span class="timeline-text">Hacemos asambleas periódicas en las que los vecinos pueden proponer y votar abiertamente.</span></div>
+              <div class="timeline-item"><span class="timeline-year">Comunicación</span><span class="timeline-text"> Se han creado los canales de comunicación online y las redes sociales para mayor difusión de las actividades de la asociación.</span></div>
+            </div>
+          </div>
+        </div>
+ 	
+	<!-- Card 2 -->
+        <div class="value-card fade-in">
+          <div class="value-photo">
+            <img src="img/local.jpg" alt="Local social de San Román">
+          </div>
+          <div class="value-content">
+            <h3>Un espacio de convivencia</h3>
+            <p>Hemos conseguido un Local Social para San Román, un lugar donde encontrarse, compartir, decidir y hacer pueblo. Un espacio pensado para disfrutar juntos y seguir construyendo el futuro de nuestro pueblo.</p>
+            <div class="card-timeline">
+              <div class="timeline-item"><span class="timeline-year">Local</span><span class="timeline-text">El Ayto. de Cobreros nos cede un local social.</span></div>
+              <div class="timeline-item"><span class="timeline-year">Mobiliario</span><span class="timeline-text">La Diputación de Zamora subvenciona el mobiliario necesario para el local.</span></div>
+              <div class="timeline-item"><span class="timeline-year">Mejoras</span><span class="timeline-text">El Ayto. de Cobreros nos cede el material necesario para poner el suelo del local.</span></div>
+            </div>
           </div>
         </div>
 
-        <!-- Card 3: Raíces -->
+        <!-- Card 3 -->
         <div class="value-card fade-in">
-          <div class="value-card-img">
-            <img src="img/pilar-raices.svg" alt="Ilustración de fiesta tradicional con baile y música">
+          <div class="value-photo">
+            <img src="img/raices.jpg" alt="Música tradicional sanabresa">
           </div>
-          <div class="value-card-body">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-            </div>
+          <div class="value-content">
             <h3>Promover nuestras raíces</h3>
-            <p>Organizamos actividades culturales que promueven las tradiciones de Sanabria, financiadas con ayudas de la Diputación de Zamora, acercando la cultura popular a vecinos y visitantes.</p>
+            <p>Organizamos actividades culturales para mantener vivas las tradiciones de Sanabria, fortaleciendo la convivencia y acercando nuestra cultura a vecinos y visitantes.</p>
+            <div class="card-timeline">
+              <div class="timeline-item"><span class="timeline-year">Eventos Anuales</span><span class="timeline-text">Organizamos y disfrutamos juntos de las fiestas del Corpus.</span></div>
+              <div class="timeline-item"><span class="timeline-year">Archivo Histórico</span><span class="timeline-text">Recopilamos los topónimos tradicionales y fotografias antiguas de San Román.</span></div>
+              <div class="timeline-item"><span class="timeline-year">Actividades</span><span class="timeline-text">Concierto didáctico de música tradicional de Nel Villanueva, subvencionado por la Diputación de Zamora.</span></div>
+            </div>
           </div>
         </div>
 
-        <!-- Card 4: Comunidad -->
+        <!-- Card 4 -->
         <div class="value-card fade-in">
-          <div class="value-card-img">
-            <img src="img/pilar-comunidad.svg" alt="Ilustración de manos plantando un árbol joven">
+          <div class="value-photo">
+            <img src="img/grupo.jpg" alt="Todos juntos en San Román">
           </div>
-          <div class="value-card-body">
-            <div class="value-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
+          <div class="value-content">
             <h3>Construyendo comunidad</h3>
             <p>Seguimos trabajando en nuevos proyectos que contribuyan al desarrollo del pueblo, fortaleciendo la convivencia y haciendo de San Román un lugar cada vez más vivo y participativo.</p>
+            <div class="card-timeline">
+              <div class="timeline-item"><span class="timeline-year">2025</span><span class="timeline-text">Inicio de nuevos proyectos comunitarios.</span></div>
+              <div class="timeline-item"><span class="timeline-year">2026</span><span class="timeline-text">Ampliación de actividades para todas las edades.</span></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== GALERÍA (Carrusel) ========== -->
+  <!-- ========== GALERÍA ========== -->
   <section class="section section--sage" id="galeria">
     <div class="container">
       <p class="section-eyebrow">Galería</p>
       <h2 class="section-title">Momentos que nos unen</h2>
-      <p class="section-intro">Algunas imágenes de nuestro pueblo, sus rincones y la vida que compartimos.</p>
+      <p class="section-intro">Nuestro pueblo, sus rincones y la vida que compartimos.</p>
 
-      <div class="carousel" id="carousel">
+      <div class="carousel">
         <div class="carousel-track" id="carousel-track">
-          <div class="carousel-slide">
-            <img src="img/pueblo-aereo.jpg" alt="Vista aérea de San Román de Sanabria" loading="lazy">
-            <div class="carousel-caption"><h3>San Román desde el aire</h3><p>Foto: Amando Crespo</p></div>
+          <div class="carousel-slide" onclick="openLightbox(this)">
+            <img src="img/pueblo-aereo.jpg" alt="Vista aérea de San Román de Sanabria rodeado de bosques">
+            <div class="carousel-caption">San Román desde el aire · Foto: Amando Crespo</div>
           </div>
-          <div class="carousel-slide">
-            <img src="img/grupo.jpg" alt="Vecinos de San Román de Sanabria" loading="lazy">
-            <div class="carousel-caption"><h3>Todos juntos</h3><p>La fuerza de la comunidad</p></div>
+          <div class="carousel-slide" onclick="openLightbox(this)">
+            <img src="img/iglesia.jpg" alt="Iglesia de San Román de Sanabria">
+            <div class="carousel-caption">Iglesia de San Román</div>
           </div>
-          <div class="carousel-slide">
-            <img src="img/iglesia.jpg" alt="Iglesia de San Román de Sanabria" loading="lazy">
-            <div class="carousel-caption"><h3>Iglesia de San Román</h3><p>Patrimonio vivo del pueblo</p></div>
+          <div class="carousel-slide" onclick="openLightbox(this)">
+            <img src="img/baile.jpg" alt="Vecinos bailando en una celebración al aire libre">
+            <div class="carousel-caption">Baile entre vecinos</div>
           </div>
-          <div class="carousel-slide">
-            <img src="img/baile.jpg" alt="Vecinos bailando en una celebración al aire libre" loading="lazy">
-            <div class="carousel-caption"><h3>Baile entre vecinos</h3><p>Tradición y alegría</p></div>
+          <div class="carousel-slide" onclick="openLightbox(this)">
+            <img src="img/portada.jpg" alt="Castaño centenario de San Román de Sanabria">
+            <div class="carousel-caption">El castaño centenario</div>
           </div>
-          <div class="carousel-slide">
-            <img src="img/portada.jpg" alt="Castaño centenario de San Román" loading="lazy">
-            <div class="carousel-caption"><h3>El castaño centenario</h3><p>Raíces que nos sostienen</p></div>
-          </div>
-          <div class="carousel-slide">
-            <img src="img/vecinos.jpg" alt="Vecinos disfrutando de una tarde" loading="lazy">
-            <div class="carousel-caption"><h3>Tardes de pueblo</h3><p>Tiempo compartido</p></div>
+          <div class="carousel-slide" onclick="openLightbox(this)">
+            <img src="img/vecinos.jpg" alt="Vecinos compartiendo una tarde en San Román">
+            <div class="carousel-caption">Tardes de pueblo</div>
           </div>
         </div>
-        <button class="carousel-btn carousel-btn--prev" aria-label="Anterior" onclick="moveCarousel(-1)">
+        <button class="carousel-btn carousel-btn--prev" id="carousel-prev" aria-label="Anterior">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
-        <button class="carousel-btn carousel-btn--next" aria-label="Siguiente" onclick="moveCarousel(1)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        <button class="carousel-btn carousel-btn--next" id="carousel-next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
         </button>
+        <div class="carousel-dots" id="carousel-dots"></div>
       </div>
-      <div class="carousel-dots" id="carousel-dots"></div>
     </div>
   </section>
 
-  <!-- ========== APOYO DIPUTACIÓN ========== -->
-  <div class="apoyo">
-    <div class="container">
-      <p>Con el apoyo de</p>
-      <img src="img/diputacion-zamora.png" alt="Diputación de Zamora">
-    </div>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <img id="lightbox-img" src="" alt="">
   </div>
 
   <!-- ========== CONTACTO ========== -->
@@ -230,7 +222,7 @@
             Enviar mensaje
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </button>
-          <p id="form-feedback" style="margin-top:14px; font-size:0.9rem; display:none;"></p>
+          <p id="form-feedback" style="margin-top:16px; font-size:0.9rem; color:var(--leaf); display:none;"></p>
         </div>
         <div class="map-wrapper fade-in">
           <iframe
@@ -251,115 +243,154 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <img src="img/logo.png" alt="" class="footer-logo" aria-hidden="true">
-          <div class="footer-brand-text">Asociación de Vecinos<br>San Román de Sanabria</div>
+          <div class="footer-brand-text">
+            Asociación de Vecinos<br>San Román de Sanabria
+          </div>
         </div>
-        <div class="footer-right">
-          <div class="footer-contact">
-            <a href="mailto:avsanromans@gmail.com">avsanromans@gmail.com</a>
-          </div>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/profile.php?id=100087089541079" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UCU8y4FqupEK8_rAUB7P-YuQ/" target="_blank" rel="noopener" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-            </a>
-          </div>
+        <div class="footer-contact">
+          <a href="mailto:avsanromans@gmail.com">avsanromans@gmail.com</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 AAVV San Román de Sanabria</span>
-        <div class="footer-diputacion">
-          <span>Con el apoyo de</span>
-          <img src="img/diputacion-zamora.png" alt="Diputación de Zamora">
-        </div>
+        &copy; 2026 AAVV San Román de Sanabria
       </div>
     </div>
   </footer>
 
   <!-- ========== SCRIPTS ========== -->
   <script>
-    // Header scroll
-    var header = document.getElementById('site-header');
-    window.addEventListener('scroll', function() {
+    // Header scroll effect
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
       header.classList.toggle('scrolled', window.scrollY > 40);
     });
 
     // Mobile menu
-    var menuToggle = document.getElementById('menu-toggle');
-    var navGroup = document.getElementById('header-nav-group');
-    menuToggle.addEventListener('click', function() {
-      navGroup.classList.toggle('open');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
     });
-    document.querySelectorAll('.main-nav a').forEach(function(link) {
-      link.addEventListener('click', function() { navGroup.classList.remove('open'); });
+    // Close on link click
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mainNav.classList.remove('open'));
     });
 
-    // Scroll fade-in
-    var faders = document.querySelectorAll('.fade-in');
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
+    // Scroll animations
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
-    faders.forEach(function(el) { observer.observe(el); });
+    }, { threshold: 0.15 });
+    faders.forEach(el => observer.observe(el));
+
+    // Lightbox
+    function openLightbox(el) {
+      const img = el.querySelector('img');
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox-img').alt = img.alt;
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
 
     // Carousel
-    var currentSlide = 0;
-    var track = document.getElementById('carousel-track');
-    var slides = track.querySelectorAll('.carousel-slide');
-    var totalSlides = slides.length;
-    var dotsContainer = document.getElementById('carousel-dots');
+    const track = document.getElementById('carousel-track');
+    const slides = track.querySelectorAll('.carousel-slide');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const dotsContainer = document.getElementById('carousel-dots');
+    let currentSlide = 0;
+    let autoplayTimer;
 
-    for (var i = 0; i < totalSlides; i++) {
-      var dot = document.createElement('button');
-      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-      dot.setAttribute('aria-label', 'Ir a imagen ' + (i + 1));
-      dot.dataset.index = i;
-      dot.addEventListener('click', function() { goToSlide(parseInt(this.dataset.index)); });
+    // Create dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.classList.add('carousel-dot');
+      if (i === 0) dot.classList.add('active');
+      dot.setAttribute('aria-label', `Ir a imagen ${i + 1}`);
+      dot.addEventListener('click', () => goToSlide(i));
       dotsContainer.appendChild(dot);
-    }
+    });
+    const dots = dotsContainer.querySelectorAll('.carousel-dot');
 
     function goToSlide(index) {
       currentSlide = index;
-      track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
-      var dots = document.querySelectorAll('.carousel-dot');
-      for (var j = 0; j < dots.length; j++) {
-        dots[j].classList.toggle('active', j === currentSlide);
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+      resetAutoplay();
+    }
+
+    function nextSlide() {
+      goToSlide((currentSlide + 1) % slides.length);
+    }
+
+    function prevSlide() {
+      goToSlide((currentSlide - 1 + slides.length) % slides.length);
+    }
+
+    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prevSlide(); });
+    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSlide(); });
+
+    // Autoplay
+    function resetAutoplay() {
+      clearInterval(autoplayTimer);
+      autoplayTimer = setInterval(nextSlide, 5000);
+    }
+    resetAutoplay();
+
+    // Pause on hover
+    const carousel = document.querySelector('.carousel');
+    carousel.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+    carousel.addEventListener('mouseleave', resetAutoplay);
+
+    // Touch/swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    track.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? nextSlide() : prevSlide();
       }
-    }
-
-    function moveCarousel(direction) {
-      var next = currentSlide + direction;
-      if (next < 0) next = totalSlides - 1;
-      if (next >= totalSlides) next = 0;
-      goToSlide(next);
-    }
-
-    var autoplay = setInterval(function() { moveCarousel(1); }, 6000);
-    var carouselEl = document.getElementById('carousel');
-    carouselEl.addEventListener('mouseenter', function() { clearInterval(autoplay); });
-    carouselEl.addEventListener('mouseleave', function() {
-      autoplay = setInterval(function() { moveCarousel(1); }, 6000);
     });
 
-    // Touch swipe
-    var touchStartX = 0;
-    carouselEl.addEventListener('touchstart', function(e) { touchStartX = e.touches[0].clientX; }, { passive: true });
-    carouselEl.addEventListener('touchend', function(e) {
-      var diff = touchStartX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 50) moveCarousel(diff > 0 ? 1 : -1);
-    }, { passive: true });
+    // Keyboard
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') prevSlide();
+      if (e.key === 'ArrowRight') nextSlide();
+    });
 
-    // Form
+    // Value card timeline — toggle on tap for touch devices
+    document.querySelectorAll('.value-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        if ('ontouchstart' in window) {
+          this.classList.toggle('touch-active');
+          // Close other cards
+          document.querySelectorAll('.value-card').forEach(other => {
+            if (other !== this) other.classList.remove('touch-active');
+          });
+        }
+      });
+    });
+
+    // Form handler (placeholder — replace with actual backend)
     function handleSubmit() {
-      var name = document.getElementById('name').value.trim();
-      var email = document.getElementById('email').value.trim();
-      var message = document.getElementById('message').value.trim();
-      var feedback = document.getElementById('form-feedback');
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const feedback = document.getElementById('form-feedback');
 
       if (!name || !email || !message) {
         feedback.textContent = 'Por favor, completa todos los campos.';
@@ -368,12 +399,13 @@
         return;
       }
 
-      var subject = encodeURIComponent('Mensaje desde la web — ' + name);
-      var body = encodeURIComponent('Nombre: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      // Build mailto link as simple fallback
+      const subject = encodeURIComponent('Mensaje desde la web — ' + name);
+      const body = encodeURIComponent('Nombre: ' + name + '\nEmail: ' + email + '\n\n' + message);
       window.location.href = 'mailto:avsanromans@gmail.com?subject=' + subject + '&body=' + body;
 
-      feedback.textContent = 'Se ha abierto tu cliente de correo para enviar el mensaje.';
-      feedback.style.color = '#4D8B2A';
+      feedback.textContent = '¡Gracias! Se ha abierto tu cliente de correo para enviar el mensaje.';
+      feedback.style.color = 'var(--leaf)';
       feedback.style.display = 'block';
     }
   </script>
