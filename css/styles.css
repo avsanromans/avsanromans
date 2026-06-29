@@ -381,7 +381,7 @@ h1, h2, h3, h4 {
 
 .value-card h3 {
   font-size: 1.3rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: var(--forest);
   white-space: nowrap;
   overflow: hidden;
