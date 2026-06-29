@@ -220,7 +220,6 @@ h1, h2, h3, h4 {
   flex-shrink: 0;
   width: 250px;
   filter: brightness(0) invert(1);
-  opacity: 0.2;
 }
 
 .hero-text {
