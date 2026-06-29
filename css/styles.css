@@ -285,44 +285,47 @@ h1, h2, h3, h4 {
 }
 
 /* ===== ABOUT ===== */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.about-text p {
-  margin-bottom: 20px;
-  font-size: 1.05rem;
-  color: var(--text-light);
-}
-
-.about-text p:first-of-type {
-  font-size: 1.15rem;
-  color: var(--text);
-}
-
-.about-image {
+.about-row {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 12px 40px var(--shadow);
-  position: relative;
 }
 
-.about-image img {
+.about-image-full {
+  flex: 1.2;
+  min-height: 380px;
+}
+
+.about-image-full img {
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
 }
 
-.about-image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 10px;
-  border: 1px solid rgba(27, 58, 18, 0.1);
-  pointer-events: none;
+.about-text-overlay {
+  flex: 1;
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--white);
+}
+
+.about-text-overlay p {
+  margin-bottom: 16px;
+  font-size: 1.02rem;
+  color: var(--text-light);
+}
+
+.about-text-overlay p:first-of-type {
+  margin-bottom: 12px;
+}
+
+.about-text-overlay .section-title {
+  margin-bottom: 18px;
 }
 
 /* ===== VALUES (Pillars) ===== */
@@ -335,18 +338,14 @@ h1, h2, h3, h4 {
 .value-card {
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s;
   cursor: pointer;
   position: relative;
-}
-
-.value-card:hover,
-.value-card.touch-active {
-  transform: translateY(-3px);
+  height: 340px;
 }
 
 .value-photo {
-  height: 220px;
+  position: absolute;
+  inset: 0;
   overflow: hidden;
 }
 
@@ -357,45 +356,47 @@ h1, h2, h3, h4 {
   transition: transform 0.5s ease;
 }
 
-.value-card:hover .value-photo img {
+.value-card:hover .value-photo img,
+.value-card.touch-active .value-photo img {
   transform: scale(1.05);
 }
 
 .value-content {
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(6px);
-  padding: 28px 28px 32px;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 24px 28px;
+  transform: translateY(calc(100% - 68px));
+  transition: transform 0.45s ease;
+}
+
+.value-card:hover .value-content,
+.value-card.touch-active .value-content {
+  transform: translateY(0);
 }
 
 .value-card h3 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   color: var(--forest);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .value-card p {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: var(--text-light);
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
-/* Timeline tooltip */
+/* Timeline inside card */
 .card-timeline {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: max-height 0.45s ease, opacity 0.35s ease, margin-top 0.35s ease;
-  margin-top: 0;
-  border-top: 1px solid transparent;
-}
-
-.value-card:hover .card-timeline,
-.value-card.touch-active .card-timeline {
-  max-height: 400px;
-  opacity: 1;
-  margin-top: 16px;
-  padding-top: 14px;
+  margin-top: 12px;
+  padding-top: 12px;
   border-top: 1px solid rgba(27, 58, 18, 0.12);
 }
 
@@ -652,6 +653,29 @@ h1, h2, h3, h4 {
   border: none;
 }
 
+/* ===== COLABORADORES ===== */
+.colaboradores {
+  padding: 48px 0;
+  background: var(--sage);
+  text-align: center;
+}
+
+.colaboradores-text {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--stone);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.colaboradores-logo {
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
 /* ===== FOOTER ===== */
 .site-footer {
   background: var(--earth);
@@ -716,20 +740,24 @@ h1, h2, h3, h4 {
   .hero-logo { width: 150px; }
   .hero-text p { margin: 0 auto; }
 
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
+  .about-row {
+    flex-direction: column;
   }
 
-  .about-image { order: -1; }
-  .about-image img { height: 300px; }
+  .about-image-full {
+    min-height: 260px;
+  }
+
+  .about-text-overlay {
+    padding: 28px 24px;
+  }
 
   .values-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .value-photo { height: 200px; }
+  .value-card { height: 300px; }
 
   .carousel-slide { height: 380px; }
 
