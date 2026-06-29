@@ -295,8 +295,8 @@ h1, h2, h3, h4 {
 }
 
 .about-image-full {
-  flex: 1.2;
-  min-height: 380px;
+  flex: 1.8;
+  min-height: 300px;
 }
 
 .about-image-full img {
@@ -371,6 +371,7 @@ h1, h2, h3, h4 {
   padding: 24px 28px;
   transform: translateY(calc(100% - 68px));
   transition: transform 0.45s ease;
+  opacity: 90%;
 }
 
 .value-card:hover .value-content,
@@ -671,9 +672,26 @@ h1, h2, h3, h4 {
 
 .colaboradores-logo {
   max-width: 260px;
+  max-height: 70px;
+  width: auto;
   height: auto;
-  margin: 0 auto;
   display: block;
+  object-fit: contain;
+}
+
+.colaboradores-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.colaboradores-nombre {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--earth);
 }
 
 /* ===== FOOTER ===== */
