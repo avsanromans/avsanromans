@@ -218,7 +218,7 @@ h1, h2, h3, h4 {
 
 .hero-logo {
   flex-shrink: 0;
-  width: 140px;
+  width: 250px;
   filter: brightness(0) invert(1);
   opacity: 0.2;
 }
