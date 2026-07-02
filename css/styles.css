@@ -369,7 +369,6 @@ h1, h2, h3, h4 {
   font-size: 1.02rem;
   color: var(--text-light);
   margin-bottom: 48px;
-  max-width: 560px;
   line-height: 1.7;
 }
 
