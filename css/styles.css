@@ -323,7 +323,12 @@ h1, h2, h3, h4 {
 
 /* ===== SECTIONS ===== */
 .section {
-  padding: 50px 0;
+  padding: 25px 0;
+}
+
+/* La primera sección conserva 50px arriba (espacio bajo la flecha del hero) */
+.hero + .section {
+  padding-top: 50px;
 }
 
 .section--sage {
@@ -363,7 +368,8 @@ h1, h2, h3, h4 {
 .section-intro {
   font-size: 1.02rem;
   color: var(--text-light);
-  margin-bottom: 30px;
+  margin-bottom: 48px;
+  max-width: 560px;
   line-height: 1.7;
 }
 
@@ -1103,8 +1109,6 @@ h1, h2, h3, h4 {
 
 /* Mobile */
 @media (max-width: 640px) {
-  .section { padding: 72px 0; }
-
   .menu-toggle { display: block; }
 
   .main-nav {
